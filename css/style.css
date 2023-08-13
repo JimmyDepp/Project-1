@@ -1,0 +1,452 @@
+:root {
+    --main-duration: .5s;
+}
+
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Oswald', sans-serif;
+    transition-duration: .5s;
+}
+
+nav {
+    background-color: black;
+    width: 100%;
+    height: 30px;
+}
+
+nav i {
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    padding: 7.5px 15px;
+}
+
+nav i:last-child {
+    float: right;
+
+}
+
+nav i:hover {
+    color: rgb(255, 0, 0);
+}
+
+/* start headings and header  */
+
+.text-box {
+    text-align: center;
+    padding: 60px 0px;
+}
+
+.text-box h1 {
+    font-size: 4rem;
+    font-weight: 800;
+    background: -webkit-linear-gradient(#ff0000, #ee00ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.text-box h6 {
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.text-box h6 span {
+    background-color: black;
+    color: white;
+    padding: 0px 5px;
+    border-radius: 5px;
+}
+
+header {
+    position: relative;
+
+}
+
+header .above-image {
+    position: absolute;
+    color: white;
+    display: block;
+    top: 15%;
+    left: 50px;
+
+
+}
+
+header .above-image h1 {
+    line-height: 55px;
+    letter-spacing: 5px;
+    line-height: 96px;
+    font-size: 4rem;
+
+}
+
+header .above-image h2 {
+    letter-spacing: 2.5px;
+    font-size: 2.5rem;
+    line-height: 54px;
+}
+
+header .above-image button {
+    background-color: rgba(255, 255, 255, .3);
+    color: black;
+    padding: 5px 20px;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    border-style: none;
+}
+
+header .above-image button:hover {
+    color: red;
+    background-color: white;
+    transition: .2s;
+}
+
+
+header img {
+    width: 100%;
+}
+
+/* end headings  */
+
+/* start main  */
+main {
+    background-color: #f1f1f1;
+
+}
+
+/* start left-side  */
+main .left-side {
+    float: left;
+    width: 70%;
+    padding: 20px 30px;
+    background-color: #f1f1f1;
+}
+
+main .left-side article {
+    padding: 20px;
+    background-color: #ffffff;
+
+}
+
+main .left-side article .article-title {
+    text-align: center;
+    padding-bottom: 15px;
+    font-size: 2rem;
+
+
+}
+
+main .left-side article .article-description {
+    text-align: center;
+    padding-bottom: 25px;
+    font-size: 1rem;
+
+}
+
+main .left-side article .article-description span {
+    color: silver;
+}
+
+main .left-side article .article-content {
+    font-family: Opensans;
+    text-align: justify;
+    line-height: 23px;
+    font-size: 15px;
+}
+
+main .left-side article .article-content p {
+    padding: 10px 0px;
+}
+
+main .left-side article .article-content p span {
+    font-style: italic;
+}
+
+main .left-side article .article-buttons .left-button {
+    float: left;
+    background-color: #eee;
+    color: black;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    border: 1px solid grey;
+    font-weight: 200;
+}
+
+main .left-side article .article-buttons .left-button:hover {
+    color: red;
+    background-color: black;
+    background-color: white;
+    transition: .2s;
+}
+
+main .left-side article .article-buttons .right-button {
+    float: right;
+    background-color: #eee;
+    color: black;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    border-style: none;
+    font-weight: 200;
+}
+
+main .left-side article .article-buttons .right-button:hover {
+    color: red;
+    background-color: black;
+    background-color: white;
+    transition: .2s;
+}
+
+.hr {
+    border-bottom: 1px solid red;
+    padding-top: 50px;
+}
+
+main .left-side article .article-footer {
+    padding: 30px 0px;
+}
+
+main .left-side article .article-footer .reply img {
+    width: 20%;
+}
+
+main .left-side article .article-footer .reply .text-aside {
+    float: right;
+    width: 80%;
+    padding: 0px 10px;
+}
+
+main .left-side article .article-footer .reply .text-aside>p {
+    padding-bottom: 20px;
+    font-size: 1.2rem;
+}
+
+main .left-side article .article-footer .reply .text-aside span {
+    font-size: .7rem;
+    color: silver;
+}
+
+main .left-side article .article-footer .reply .text-aside p:last-child {
+    font-size: .9rem;
+}
+
+main .right-side .content-right {
+    margin-top: -5px;
+    background-color: black;
+    color: white;
+    padding: 30px 20px;
+
+}
+
+main .right-side .content-right>p {
+    line-height: 30px;
+    font-size: 20px;
+}
+
+main .right-side .content-right p:last-child {
+    line-height: 23px;
+    font-size: 15px;
+}
+
+main .right-side .right-sections {
+    margin: 20px 0px;
+}
+
+main .right-side .right-sections h3 {
+    background-color: black;
+    color: white;
+    padding: 20px;
+    font-family: oswald;
+    font-weight: normal;
+}
+
+main .right-side .right-sections .section-content {
+    background-color: white;
+    padding: 20px;
+
+
+}
+
+main .right-side .right-sections .section-content ul {
+    padding: 0px;
+    list-style-type: none;
+
+}
+
+main .right-side .right-sections .section-content ul li {
+    padding: 20px;
+}
+
+main .right-side .right-sections .section-content ul li:not(:first-child) {
+    border-top: 1px solid red;
+}
+
+main .right-side .right-sections .section-content ul li .image {
+    width: 20%;
+    float: left;
+}
+
+
+main .right-side .right-sections .section-content ul li .info {
+    width: 80%;
+    float: right;
+    padding: 0px 15px;
+    line-height: 40px;
+}
+
+main .right-side .right-sections .section-content ul li .info p {
+    font-size: 20px;
+    font-weight: 300;
+}
+
+main .right-side .right-sections .section-content ul li:hover {
+    background-color: silver;
+}
+
+main .right-side .right-sections .section-content .advertise {
+    padding: 20px;
+    
+}
+
+main .right-side .right-sections .section-content .advertise p {
+    text-align: center;
+    background-color: #f1f1f1;
+    padding: 100px 0px;
+    color: black;
+}
+
+main .right-side .right-sections #tags span {
+    display: inline-block;
+    background-color: silver;
+    padding: 0px 10px;
+    margin-top: 10px;
+    font-family: opensans;
+    font-weight: 400 ;
+    font-size: .9rem;
+}
+
+main .right-side .right-sections #tags span:first-child {
+    background-color: black;
+    color: white;
+}
+
+main .right-side .right-sections #inspiration div {
+    width: 50%;
+    padding: 10px;
+    float: left;
+}
+
+main .right-side .right-sections #inspiration img {
+    width: 100%;
+}
+
+main .right-side .right-sections #follow i {
+    font-size: 1.5rem;
+    padding: 0px 5px;
+}
+
+main .right-side .right-sections #follow i:hover {
+    color: red;
+    
+}
+
+main .right-side .right-sections #subscribe p {
+    margin: 10px;
+    font-family: opensans;
+    font-weight: 400;
+    line-height: 23px;
+    font-size: 1.3rem;
+
+    
+}
+
+main .right-side .right-sections #subscribe input {
+    width: 100%;
+    padding: 15px;
+    border-style: none;
+    margin: 5px;
+}
+
+main .right-side .right-sections #subscribe button {
+    width: 100%;
+    padding: 10px;
+    background-color: red;
+    color: black;
+    border-style: none;
+    margin: 5px;
+}
+
+main .right-side .right-sections #subscribe button:hover {
+    background-color: rgb(255, 50, 50);
+}
+
+main .right-side {
+    float: right;
+    width: 30%;
+    background-color: #f1f1f1;
+    padding: 20px 0px;
+}
+
+
+.clear {
+    content: "";
+    clear: both;
+}
+
+
+/* end main */
+
+/* start footer  */
+footer {
+    margin-top: 10px;
+    background-color: black;
+    padding: 50px;
+}
+
+footer i {
+    margin-right: 5px;
+
+}
+
+footer>a {
+    background-color: white;
+    padding: 10px;
+    border-radius: 5px;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    transition: var(--main-duration);
+}
+
+footer>a:hover {
+    color: red;
+}
+
+footer a:last-child {
+    color: red;
+
+}
+
+
+
+footer p,
+em {
+    margin-top: 50px;
+    color: white;
+    font-size: 1rem;
+}
+
+/* end footer  */
