@@ -435,7 +435,7 @@ main .right-side {
     margin: auto;
     margin-top: 350px;
     padding: 30px;
-    background-color: grey;
+    background-color: rgb(255, 255, 255);
 }
 
 #subscribeWindow > div #close {
