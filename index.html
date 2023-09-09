@@ -71,12 +71,12 @@
                                 minim veniam, quis nostrud exercitation ullamco.</p>
                             <div class="article-buttons">
                                 <button class="left-button"><i class="fa-solid fa-thumbs-up"></i> Like </button>
-                                <button class="right-button">Replies <span> 1 </span></button>
+                                <button class="right-button" onclick="reply1()">Replies <span> 1 </span></button>
                                 <div class="clear"></div>
                             </div>
                         </div>
                         <div class="hr"></div>
-                        <div class="article-footer">
+                        <div class="article-footer" id="footer-1">
                             <div class="reply">
                                 <img src="images/avatar_smoke.jpg" alt="">
                                 <section class="text-aside">
@@ -104,12 +104,12 @@
                                 minim veniam, quis nostrud exercitation ullamco.</p>
                             <div class="article-buttons">
                                 <button class="left-button"><i class="fa-solid fa-thumbs-up"></i> Like </button>
-                                <button class="right-button">Replies <span> 1 </span></button>
+                                <button class="right-button" onclick="reply2()">Replies <span> 1 </span></button>
                                 <div class="clear"></div>
                             </div>
                         </div>
                         <div class="hr"></div>
-                        <div class="article-footer">
+                        <div class="article-footer" id="footer-2">
                             <div class="reply">
                                 <img src="images/girl_hood.jpg" alt="">
                                 <section class="text-aside">
@@ -137,12 +137,12 @@
                                 minim veniam, quis nostrud exercitation ullamco.</p>
                             <div class="article-buttons">
                                 <button class="left-button"><i class="fa-solid fa-thumbs-up"></i> Like </button>
-                                <button class="right-button">Replies <span> 1 </span></button>
+                                <button class="right-button" onclick="reply3()">Replies <span> 1 </span></button>
                                 <div class="clear"></div>
                             </div>
                         </div>
                         <div class="hr"></div>
-                        <div class="article-footer">
+                        <div class="article-footer" id="footer-3">
                             <div class="reply">
                                 <img src="images/girl_mountain.jpg" alt="">
                                 <section class="text-aside">
@@ -270,10 +270,22 @@
                         <div class="section-content" id="subscribe">
                             <p>Enter your e-mail below and get notified on the latest blog post</p>
                             <input type="e-mail" placeholder="Enter Your E-Mail Here">
-                            <button>Subscribe</button>
+                            <button id="btnSubscribe" onclick="myfunction()">Subscribe</button>
                         </div>
                     </section>
                 </aside>
+
+                <section class="right-sections" id="subscribeWindow">
+                    <div>
+                        <button id="close" onclick="myClose()"><i class="fa-solid fa-xmark"></i></button>
+                        <h1>Subscribe</h1>
+                        <div class="section-content" id="subscribe">
+                            <p>Enter your e-mail below and get notified on the latest blog post</p>
+                            <input type="e-mail" placeholder="Enter Your E-Mail Here">
+                            <button id="subscribe">Subscribe</button>
+                        </div>
+                    </div>
+                </section>
 
             </main>
             <!-- end main  -->
@@ -283,6 +295,31 @@
                 <p>This is developed by <a href="#">JIMMY DEPP</a></p>
             </footer>
             <!-- end footer  -->
+
+
+        <script>
+            function myfunction(){
+                document.getElementById("subscribeWindow").style.visibility="visible";
+            }
+
+            function myClose(){
+                document.getElementById("subscribeWindow").style.visibility="hidden";
+            }
+
+            function reply1(){
+                document.getElementById("footer-1").style.display="contents";
+            }
+
+            function reply2(){
+                document.getElementById("footer-2").style.display="contents";
+            }
+
+            function reply3(){
+                document.getElementById("footer-3").style.display="contents";
+            }
+
+
+        </script>
 </body>
 
 </html>
